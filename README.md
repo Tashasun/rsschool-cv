@@ -1,1 +1,0 @@
-https://tashasun.github.io/rsschool-cv/cv
