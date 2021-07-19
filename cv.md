@@ -12,7 +12,7 @@
 * basic HTML and CSS
 
 5. __Code example:__ 
-''' 
+'''html code
 </html>
 <!DOCTYPE html>
 <html lang="ru">
