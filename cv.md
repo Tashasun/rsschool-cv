@@ -12,7 +12,7 @@
 * basic HTML and CSS
 
 5. __Code example:__ 
-'''
+```
     </html>
     <!DOCTYPE html>
     <html lang="ru">
@@ -38,7 +38,7 @@
     </body>
     
     </html>
-'''
+```
 
 
 6. __Work experience:__ have some experience in project management, work with ERM- systems, work with 1C, have some knowledge for programming it
