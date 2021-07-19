@@ -12,32 +12,32 @@
 * basic HTML and CSS
 
 5. __Code example:__ 
-'''html code
-</html>
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <H1> Всем привет</H1>
-    <h2>Это моя первая страница</h2>
-    <p> Аудио для Василисы: юнит 11, упражнение 5</p>
-    <audio src="/audio/Brilliant3class_95.mp3" controls></audio>
-    <h4><b>Послушай и ответь на вопросы:</b></h4>
-    <ol>
-        <li>Is Bertie the fastest?</li>
-        <li>What is the third prize?</li>
-        <li>Will Eddie come to Brilliant Island next year?</li>
-    </ol>
-</body>
-
-</html>
+'''
+    </html>
+    <!DOCTYPE html>
+    <html lang="ru">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <H1> Всем привет</H1>
+        <h2>Это моя первая страница</h2>
+        <p> Аудио для Василисы: юнит 11, упражнение 5</p>
+        <audio src="/audio/Brilliant3class_95.mp3" controls></audio>
+        <h4><b>Послушай и ответь на вопросы:</b></h4>
+        <ol>
+            <li>Is Bertie the fastest?</li>
+            <li>What is the third prize?</li>
+            <li>Will Eddie come to Brilliant Island next year?</li>
+        </ol>
+    </body>
+    
+    </html>
 '''
 
 
