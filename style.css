@@ -38,3 +38,7 @@ justify-content: center;
     bottom: 0;
     right: 0;
 }
+mark {
+    background: none;
+    color: #ffffff;
+}
