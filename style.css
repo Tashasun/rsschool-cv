@@ -1,0 +1,9 @@
+body {
+    background: rgb(137, 221, 241);
+    display: flex;
+justify-content: center;
+}
+
+.container-lg {
+     width: 500px;
+}
