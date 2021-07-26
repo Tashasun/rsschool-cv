@@ -29,6 +29,10 @@ justify-content: center;
     margin-top: 0px;
     margin-bottom: 0px;
 }
+.data a {
+    color:#ffffff;
+    text-decoration: none;
+}
 .rsschool {
     position: absolute;
     bottom: 0;
