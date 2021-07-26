@@ -1,0 +1,40 @@
+body {
+    background: rgb(181, 234, 247);
+    display: flex;
+justify-content: center;
+}
+.container {
+     width: 700px;
+}
+.header1 {
+    background: #15da40;
+    text-align: center;  
+    font: italic small-caps 900 45px/45px Arial,sans-serif;   
+}
+.header2 {
+    text-align: left;
+    font: 700 25px serif;
+    color: #4d2866;
+}
+.data {
+    position: relative;
+    background: #b378db;
+    color: #ffffff;
+    text-align: left;
+    border: 20px solid #15da40; 
+    font: 600 25px serif;
+    padding-bottom: 20px;
+}
+.data p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.data a {
+    color:#ffffff;
+    text-decoration: none;
+}
+.rsschool {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
