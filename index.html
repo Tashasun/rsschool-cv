@@ -1,137 +1,196 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="rsschool-cv" content="Natalia Limbakh">
-    <link rel="stylesheet" href="./style.css">
-    <meta property="og:image" content="./images/meavatar.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="rsschool-cv" content="Natalia Limbakh" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta property="og:image" content="./images/meavatar.jpg" />
     <title>rsschool-cv-Limbakh</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <header>
-            <h1 class="header1"> Natalia Limbakh</h1>
-        </header>
-        <main>
-            <figure>
-                <img src="./images/portrait.jpg" alt="my portrait " width="100">
-                <figcaption>
-                    My portrait
-                </figcaption>
-            </figure>
-            <h2 class="header1"> CV Resume</h2>
-            <ol>
-                <li>
-                    <section>
-                        <h3 class="header2">
-                            Contacts:
-                        </h3>
-                        <ul>
-                            <li>Email: natalia.limbakh@gmail.com</li>
-                            <li>Telephone number: 7(921)352 18 45</li>
-                            <li>Discord: tashasun#0475</li>
-                        </ul>
-                    </section>
-                </li>
+      <header >
+        <h1 id="begining" class="header1">Natalia Limbakh</h1>
+        <nav>
+          <ul class="navigation">
+            <li class="menu-items">
+              <a href="#contacts">Contacts</a>
+            </li>
+            <li class="menu-items">
+              <a href="#about">About me</a>
+            </li>
+            <li class="menu-items">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="menu-items">
+              <a href="#code">Code example</a>
+            </li>
+            <li class="menu-items">
+              <a href="#experience">Work experience</a>
+            </li>
+            <li class="menu-items">
+              <a href="#education">Education</a>
+            </li>
+            <li class="menu-items">
+              <a href="#language">Language</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="left">
+          <figure>
+            <img src="./images/portrait.jpg" alt="my portrait " width="100" />
+            <figcaption>My portrait</figcaption>
+          </figure>
+          <h2 class="header1">CV Resume</h2>
 
-                <li>
-                    <section>
-                        <h3 class="header2">
-                            About me:
-                        </h3>
-                        <p>Highly organized and detail-oriented. Fast and easy in learning. Extremely motivated for
-                            career
-                            change goal.</p>
-                    </section>
-                </li>
-                <li>
-                    <section>
-                        <h3 class="header2">
-                            Skills:
-                        </h3>
-                        <ul>
-                            <li>studying in RS school,</li>
-                            <li>basic HTML and CSS</li>
-                        </ul>
-                    </section>
-                </li>
+          <section id="contacts" class="contacts">
+            <h3 class="header2">Contacts:</h3>
+            <ul>
+              <li>Email: natalia.limbakh@gmail.com</li>
+              <li>Telephone number: 7(921)352 18 45</li>
+              <li>Discord: tashasun#0475</li>
+            </ul>
+          </section>
+        </div>
 
-                <li>
-                    <section>
-                        <h3 class=header2>Code example:</h3>
-                        <pre><code> &lt;/html&gt;
- &lt;!DOCTYPE html&gt;
- &lt;html lang="ru"&gt;
-    
- &lt;head&gt;
-     &lt;meta charset="UTF-8"&gt;
-     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-     &lt;title&gt;Document&lt;/title&gt;
- &lt;/head&gt;
-    
- &lt;body&gt;
-     &lt;h1&gt; Всем привет&lt;/h1&gt;
-     &lt;h2&gt;Это моя первая страница&lt;/h2&gt;
-     &lt;p&gt; Аудио для Василисы: юнит 11, упражнение 5&lt;/p&gt;
-     &lt;audio src="/audio/Brilliant3class_95.mp3" controls&gt;&lt;/audio&gt;
-     &lt;h4&gt;&lt;b&gt;Послушай и ответь на вопросы:&lt;/b&gt;&lt;/h4&gt;
-     &lt;ol&gt;
-         &lt;li&gt;Is Bertie the fastest?&lt;/li&gt;
-         &lt;li&gt;What is the third prize?&lt;/li&gt;
-         &lt;li&gt;Will Eddie come to Brilliant Island next year?&lt;/li&gt;
-     &lt;/ol&gt;
- &lt;/body&gt;
-    
- &lt;/html&gt;
+        <div class="right">
+          <section id="about">
+            <h3 class="header2">About me:</h3>
+            <p>
+              Highly organized and detail-oriented. Fast and easy in learning.
+              Extremely motivated for career change goal.
+            </p>
+          </section>
+
+          <section id="skills">
+            <h3 class="header2">Skills:</h3>
+            <ul>
+              <li>studying in RS school;</li>
+              <li>basic HTML;</li>
+              <li>basic CSS;</li>
+              <li>basic JS.</li>
+            </ul>
+          </section>
+
+          <section id="code">
+            <h3 class="header2">
+              Code example (binary search tree validation):
+            </h3>
+<pre><code class="js">
+     class Node {
+       constructor(value, left = null, right = null) {
+         this.value = value;
+         this.left = left;
+         this.right = right;
+       }
+     }
+     const T = (v, l, r) => new Node(v, l, r);
+     
+     const is_BST = (node) => {
+       let flag = "";
+       if (node.left.value < node.value) {
+         flag = "LeftSmall";
+       }
+       if (node.left.value > node.value) {
+         flag = "RightSmall";
+       }
+     
+       function checkTreeLS(tree) {
+         if (!tree.left.value || tree.left.value == null) {
+           return true;
+         }
+         if (tree.left.value < tree.value) {
+           checkTreeLS(tree.left);
+         } else {
+           return false;
+         }
+         if (!tree.righ.value || tree.righ.value == null) {
+           return true;
+         }
+         if (tree.right.value > tree.value) {
+           checkTreeLS(tree.right);
+         } else {
+           return false;
+         }
+       }
+       if ((flag = "LeftSmall")) return checkTreeLS(node);
+     };
+     
+     const isBST = (tree) => {
+       let arr = [];
+       const bst = (node) => {
+         if (node) {
+           bst(node.left);
+           arr.push(node.value);
+           bst(node.right);
+         }
+       };
+     
+       bst(tree);
+       if (arr.length < 3) return true;
+       let decrease = arr[0] > arr[1];
+       for (let i = 1; i < arr.length - 1; i++) {
+         if (arr[i] > arr[i + 1] == decrease) continue;
+         else return false;
+       }
+       return true;
+     };
+                          
 </code></pre>
-                    </section>
-                </li>
-                <li>
-                    <section>
-                        <h3 class="header2"> Work experience:</h3>
-                        <p> I have some experience in project management, work with ERM-
-                            systems,
-                            work with 1C, have some knowledge for programming it
-                        </p>
-                    </section>
-                </li>
-                <li>
-                    <section>
-                        <h3 class="header2">Education:</h3>
-                        <p>Saint-Petersburg State University of Economics:</p>
-                        <ul>
-                            <li> BA in Menegement 2005</li>
-                            <li>Specialist Diploma in Civil Law 2006</li>
-                        </ul>
-                    </section>
-                </li>
-                <li>
-                    <section>
-                        <h3 class="header2">English:</h3>
-                        <p> English knowledge is level <b>B2</b></p>
-                    </section>
-                </li>
-            </ol>
-        </main>
-        <footer>
-            <div class="data">
-                <p> <a href="https://github.com/Tashasun"> <mark>my github</mark></a>
-                </p>
-                <p>Saint-Petersburg</p>
-                <p>2001</p>
-                <div class="rsschool">
-                    <a href="https://rs.school/js/">
-                        <img src="https://rs.school/images/rs_school_js.svg" alt="logo rsschool" width="150">
-                    </a>
-                </div>
-            </div>
-        </footer>
+          </section>
+
+          <section id="experience">
+            <h3 class="header2">Work experience:</h3>
+            <p>
+              I have some experience in project management, work with ERM-
+              systems, work with 1C, have some knowledge for programming it.
+            </p>
+          </section>
+
+          <section id="education">
+            <h3 class="header2">Education:</h3>
+            <p>Saint-Petersburg State University of Economics:</p>
+            <ul>
+              <li>BA in Menegement 2005</li>
+              <li>Specialist Diploma in Civil Law 2006</li>
+            </ul>
+          </section>
+
+          <section id="language">
+            <h3 class="header2">Language:</h3>
+            <p>Native language is Russia.</p>
+            <p>English knowledge is level <b>B2</b>.</p>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="data">
+          <p>
+            <a href="https://github.com/Tashasun"> <mark>my github</mark></a>
+          </p>
+          <p>Saint-Petersburg</p>
+          <p>2001</p>
+          <p>
+            <a href="#begining"> <mark>to the bigining</mark></a>
+          </p>
+          <div class="rsschool">
+            <a href="https://rs.school/js/">
+              <img
+                src="https://rs.school/images/rs_school_js.svg"
+                alt="logo rsschool"
+                width="150"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-
-</body>
-
+  </body>
 </html>
