@@ -14,19 +14,30 @@
   </head>
 
   <body>
-    <div class="container">
-      <header >
-        <h1 id="begining" class="header1">Natalia Limbakh</h1>
+    <div class="container" id="begining">
+      <header>
+        <h1 class="header1">Natalia Limbakh</h1>
+        <div class="heading_CV">
+            <div class="logo">
+                <a href="#" class="header_logo">
+                    <img src="./images/meavatar.jpg" alt="logo" height="40">
+                </a>
+            </div>
+         
+          <div class="header_burger">
+            <span></span>
+          </div>
+        </div>
         <nav>
           <ul class="navigation">
             <li class="menu-items">
-              <a href="#contacts">Contacts</a>
+              <a class ="anchor" href="#contacts">Contacts</a>
             </li>
             <li class="menu-items">
-              <a href="#about">About me</a>
+              <a class ="anchor" href="#about">About me</a>
             </li>
             <li class="menu-items">
-              <a href="#skills">Skills</a>
+              <a class ="anchor" href="#skills">Skills</a>
             </li>
             <li class="menu-items">
               <a href="#code">Code example</a>
@@ -43,15 +54,15 @@
           </ul>
         </nav>
       </header>
-      <main class="main_content">
+      <main class="main_content"  >
         <div class="left">
           <figure>
-            <img src="./images/portrait.jpg" alt="my portrait " width="100" />
+            <img  src="./images/portrait.jpg" alt="my portrait " width="100" />
             <figcaption>My portrait</figcaption>
           </figure>
           <h2 class="header1">CV Resume</h2>
 
-          <section id="contacts" class="contacts">
+          <section class="contacts" id="contacts">
             <h3 class="header2">Contacts:</h3>
             <ul>
               <li>Email: natalia.limbakh@gmail.com</li>
@@ -84,7 +95,7 @@
             <h3 class="header2">
               Code example (binary search tree validation):
             </h3>
-<pre><code class="js">
+            <pre><code class="js">
      class Node {
        constructor(value, left = null, right = null) {
          this.value = value;
@@ -177,7 +188,7 @@
             <a href="https://github.com/Tashasun"> <mark>my github</mark></a>
           </p>
           <p>Saint-Petersburg</p>
-          <p>2001</p>
+          <p>2021</p>
           <p>
             <a href="#begining"> <mark>to the bigining</mark></a>
           </p>
@@ -194,4 +205,5 @@
       </footer>
     </div>
   </body>
+ <script src="./script_burger.js"></script>
 </html>
