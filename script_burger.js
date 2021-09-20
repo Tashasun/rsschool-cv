@@ -7,10 +7,9 @@ let TegNav = document.getElementsByTagName("nav")[0];
 TegNav.classList.toggle("active");
 burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("active");
-navigationMenu.classList.toggle("active");
-TegNav.classList.toggle("active")
-}
-);
+  navigationMenu.classList.toggle("active");
+  TegNav.classList.toggle("active");
+});
 // $(document).ready(function() {
 //     $('.header_burger').click(function(event) {
 //         $('.header_burger,nav,.navigation').addClass('active');

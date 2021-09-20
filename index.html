@@ -10,7 +10,7 @@
     <script>
       hljs.initHighlightingOnLoad();
     </script>
-    <meta name="viewport" content = "width =device-width"
+    <meta name="viewport" content="width =device-width" />
   </head>
 
   <body>
@@ -18,12 +18,12 @@
       <header>
         <h1 class="header1">Natalia Limbakh</h1>
         <div class="heading_CV">
-            <div class="logo">
-                <a href="#" class="header_logo">
-                    <img src="./images/meavatar.jpg" alt="logo" height="40">
-                </a>
-            </div>
-         
+          <div class="logo">
+            <a href="#" class="header_logo">
+              <img src="./images/meavatar.jpg" alt="logo" height="40" />
+            </a>
+          </div>
+
           <div class="header_burger">
             <span></span>
           </div>
@@ -31,13 +31,13 @@
         <nav>
           <ul class="navigation">
             <li class="menu-items">
-              <a class ="anchor" href="#contacts">Contacts</a>
+              <a href="#contacts">Contacts</a>
             </li>
             <li class="menu-items">
-              <a class ="anchor" href="#about">About me</a>
+              <a href="#about">About me</a>
             </li>
             <li class="menu-items">
-              <a class ="anchor" href="#skills">Skills</a>
+              <a class="anchor" href="#skills">Skills</a>
             </li>
             <li class="menu-items">
               <a href="#code">Code example</a>
@@ -54,10 +54,10 @@
           </ul>
         </nav>
       </header>
-      <main class="main_content"  >
+      <main class="main_content">
         <div class="left">
           <figure>
-            <img  src="./images/portrait.jpg" alt="my portrait " width="100" />
+            <img src="./images/portrait.jpg" alt="my portrait " width="100" />
             <figcaption>My portrait</figcaption>
           </figure>
           <h2 class="header1">CV Resume</h2>
@@ -107,7 +107,7 @@
      
      const is_BST = (node) => {
        let flag = "";
-       if (node.left.value < node.value) {
+       if (node.left.value &lt; node.value) {
          flag = "LeftSmall";
        }
        if (node.left.value > node.value) {
@@ -118,7 +118,7 @@
          if (!tree.left.value || tree.left.value == null) {
            return true;
          }
-         if (tree.left.value < tree.value) {
+         if (tree.left.value &lt; tree.value) {
            checkTreeLS(tree.left);
          } else {
            return false;
@@ -146,9 +146,9 @@
        };
      
        bst(tree);
-       if (arr.length < 3) return true;
+       if (arr.length &lt; 3) return true;
        let decrease = arr[0] > arr[1];
-       for (let i = 1; i < arr.length - 1; i++) {
+       for (let i = 1; i &lt; arr.length - 1; i++) {
          if (arr[i] > arr[i + 1] == decrease) continue;
          else return false;
        }
@@ -190,7 +190,7 @@
           <p>Saint-Petersburg</p>
           <p>2021</p>
           <p>
-            <a href="#begining"> <mark>to the bigining</mark></a>
+            <a href="#begining"> <mark>to top of page</mark></a>
           </p>
           <div class="rsschool">
             <a href="https://rs.school/js/">
@@ -204,6 +204,6 @@
         </div>
       </footer>
     </div>
+    <script src="./script_burger.js"></script>
   </body>
- <script src="./script_burger.js"></script>
 </html>
